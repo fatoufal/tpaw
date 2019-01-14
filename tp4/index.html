@@ -28,8 +28,6 @@
               });
     </script>
        
-
-
     </head>
     
     <body class="">
@@ -50,7 +48,7 @@
                         <div class="form-group col-1" id="c2">5 car.</div>
                     </div>
 
-
+                    
                     <div class="form-group">
                             <label for="date" class="col-sm-2 control-label"> Date de Naissance </label>
                             <div class="col-sm-9">   
@@ -58,37 +56,40 @@
                         </div> 
                         </div>
 
-        
-        
                  <div class="form-group">
-                    <label for="add" class="col-sm-2 control-label"> Address </label>
+                    <label for="add" class="col-sm-2 control-label"> Adress </label>
                     <div class="col-sm-9">   
-                    <input type="text" class="form-control" id="add" placeholder=" Enter Address" min="5" max="50" required=""> 
+                    <input type="text" class="form-control" id="add" placeholder=" Enter Adress" min="5" max="50" required=""> 
   
                 </div> 
-                
-                <div class="form-group col-1">
-                    <button class="btn btn-warning" type="button" id="gps" onclick="getLocation()">📍 GPS</button>
+            </div>
+            <div class="form-group col">
+                <input type="text" class="champ" placeholder="" id="adresse"><br>
+                 <br>
+                <div id="map">
+                    <!--  image Google Map à mettre à jour -->                            
+                    <img alt="map" width="300" src=https://www.google.com/search?q=map+6+avenue+de+la+republique+93800+epinay+sur+seine&oq=map+&aqs=chrome.4.69i57j69i60l3j69i59j0.12718j0j1&sourceid=chrome&ie=UTF-8>
+
+                    <div id="map" align="center"></div>
                 </div>
-                <div class="col-1">
-                </div>
-                <div id="map" align="center"></div>
-                </div>
-        
-                
-        
-                 <div class="form-group">
+                             
+                    <div class="form-group col-1">
+                        <button class="btn btn-warning" type="button" id="gps" >📍 GPS</button>
+                    </div>
+                    <div class="col-1">
+                    </div>
+
+                <div class="form-group">
                         <label for="mail" class="col-sm-2 control-label"> Mail </label>
                     <div class="col-sm-9">                   
                         <input type="email" class="form-control" id="mail" placeholder="Mail" min="5" max="30" required=""> 
-                 </div>   
-                             
+                 </div> 
+                
                 </div>
 
-                <div class="form-group">
+                <div class="form-group col ">
                         <div class="col-sm-offset-2 col-sm-9" align="center">
-                            <input class="btn btn-primary" type="button" value="Ajouter" id="submit">
-                           
+                            <button type="submit" class="btn btn-primary" id="valider">Ajouter</button>                
                         </div>
                 </div>
 
@@ -106,9 +107,9 @@
             <thead>
                 <tr>
                     <th>Nom</th>
-                    <th>Prénom</th>
-                    <th>Date de naissance</th>
-                    <th>Adresse</th>
+                    <th>Prenom</th>
+                    <th>Adress</th>
+                    <th>Date de Naissance </th>
                     <th>Mail</th>
                 </tr>
             </thead>
